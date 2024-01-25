@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Snowburst+One:400|Sora:400');
+
+.Instance_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d4cfcf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: scroll;
+}
+
+/* .Logo {
+  font-family: system-ui;
+  font-size: 2rem;
+  margin-bottom: -2.5rem;
+  text-align: center;
+} */
+
+.Instance {
+  position: relative;
+  /* padding: 1rem; */
+  background-color: #eeebeb;
+  margin: 5rem auto;
+  height: 150rem;
+  width: 35rem;
+  border-radius: 15px;
+  border: none;
+}
+
+.Instance_title {
+  font-size: 2rem;
+  background-color: unset;
+  border: none;
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-family: monospace;
+  outline: none;
+}
+
+.Instance_file_input {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.Instance_selected_image {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  display: block;
+  max-width: 35rem;
+  height: auto;
+  max-height: 35rem;
+  margin-bottom: 1rem;
+  position: static;
+}
+
+.Instance_description {
+  z-index: 2;
+  background-color: rgb(247, 242, 242);
+  outline: none;
+  resize: none;
+  margin-top: -2.65rem;
+  height: 5.5rem;
+  width: 15rem;
+  position: absolute;
+  right: 52%;
+  border-radius: 5px;
+  border: none;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 1.85); */
+}
+
+.Instance_add_desc {
+  font-family: monospace;
+  z-index: 1;
+  display: flex;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: auto;
+  position: absolute;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.Instance_add_desc:hover {
+  background-color: #a2a0a0;
+  color: white;
+}
+
+.Instance_hide_desc {
+  z-index: 3;
+  right: 17.1rem;
+  display: flex;
+  border: none;
+  width: 1rem;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.Instance_button_post {
+  font-family: monospace;
+  display: flex;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  border: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.Instance_button_post:hover {
+  background-color: #a2a0a0;
+  color: white;
+}
+
+.Instance_error {
+  color: rgb(205, 95, 143);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: underline;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.15rem;
+}
+
+@media (max-width: 768px) {
+  .Logo {
+    font-size: 2.5rem;
+  }
+  .Instance {
+    height: 40%;
+    width: 65%;
+  }
+  .Instance_pai {
+    font-size: 1.5rem;
+  }
+  .Instance_description {
+    margin-top: 2rem;
+    height: 6.5rem;
+    width: 15rem;
+  }
+  .Instance_title {
+    font-size: 0.85rem;
+  }
+  .Instance_file_input {
+    font-size: 0.5rem;
+    margin-top: 0.6rem;
+  }
+  .Instance_selected_image {
+    max-width: 10rem;
+    margin-bottom: 0rem;
+  }
+  .Instance_button_post {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    font-size: 0.5rem;
+    height: 1.5rem;
+    text-align: center;
+  }
+  .Instance_add_desc {
+    margin-left: auto;
+    font-size: 0.5rem;
+    height: 1.5rem;
+  }
+  .Instance_error {
+    font-size: 0.5rem;
+    margin-top: 0.65rem;
+  }
+  .Instance_hide_desc {
+    margin-top: 3.5rem;
+    left: 6.4rem;
+  }
+  .Instance_description {
+    margin-top: 3.5rem;
+    height: 3rem;
+    width: 7rem;
+  }
+}
